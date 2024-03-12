@@ -43,6 +43,8 @@
   # Enable the Hyprland Tiling Window Manager.
   services.xserver.displayManager.sddm.enable = true;
   programs.hyprland.enable = true;
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+
 
   # Configure keymap in X11
   services.xserver = {
@@ -90,10 +92,17 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+
+## List of necessary and useful utilities for hyprland"
   	kitty
 	waybar
 	mako
 	rofi-wayland
+	xdg-utils
+	xdg-desktop-portal
+	xdg-desktop-portal-gtk
+	xdg-desktop-portal-hyprland
+##############################################
   	neovim
 	vivaldi
 	vivaldi-ffmpeg-codecs
@@ -101,6 +110,28 @@
 	git
   	texliveFull
   ];
+
+# XDG Portals
+	xdg = {
+	  autostart.enable = true;
+	  portal = {
+	    enable = true;
+	    extraPortals = [
+	      pkgs.xdg-desktop-portal
+	      pkgs.xdg-desktop-portal-gtk
+	    ];
+	  };
+	};
+
+
+# Hyprland
+	programs = {
+	  hyprland = {
+	    enable = true;
+	    xwayland = {
+	      enable = true;
+	    };
+	  };
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
