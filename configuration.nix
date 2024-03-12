@@ -99,6 +99,7 @@
 	vivaldi-ffmpeg-codecs
 	fish
 	git
+  	texliveFull
   ];
 
   # This value determines the NixOS release from which the default
