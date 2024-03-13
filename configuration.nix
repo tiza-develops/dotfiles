@@ -100,6 +100,7 @@
 	xdg-desktop-portal
 	xdg-desktop-portal-gtk
 	xdg-desktop-portal-hyprland
+	qtwayland
 ##############################################
   	neovim
 	vivaldi
