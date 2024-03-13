@@ -101,6 +101,8 @@
 	xdg-desktop-portal-hyprland
 	qt6.qtwayland
 	libsForQt5.qt5.qtwayland
+	egl-wayland
+	xwaylandvideobridge
 ##############################################
   	neovim
 	vivaldi
