@@ -42,7 +42,6 @@
 
   # Enable the Hyprland Tiling Window Manager.
   services.xserver.displayManager.sddm.enable = true;
-  programs.hyprland.enable = true;
 
   # Configure keymap in X11
   services.xserver = {
@@ -100,7 +99,8 @@
 	xdg-desktop-portal
 	xdg-desktop-portal-gtk
 	xdg-desktop-portal-hyprland
-	qtwayland
+	qt6.qtwayland
+	libsForQt5.qt5.qtwayland
 ##############################################
   	neovim
 	vivaldi
