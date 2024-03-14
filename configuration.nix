@@ -80,10 +80,10 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.math = {
     isNormalUser = true;
+    shell = pkgs.fish;
     description = "Work";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-      shell = fish
       kate
       firefox
       vivaldi
