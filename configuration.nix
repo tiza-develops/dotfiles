@@ -81,6 +81,8 @@
     packages = with pkgs; [
       kate
       firefox
+      vivaldi
+      vivaldi-ffmpeg-codecs
     #  thunderbird
     ];
   };
@@ -107,8 +109,6 @@
 	xwaylandvideobridge
 ##############################################
   	neovim
-	vivaldi
-	vivaldi-ffmpeg-codecs
 	fish
 	git
   	texliveFull
