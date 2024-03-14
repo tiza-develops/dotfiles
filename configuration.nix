@@ -80,6 +80,7 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       kate
+      firefox
     #  thunderbird
     ];
   };
