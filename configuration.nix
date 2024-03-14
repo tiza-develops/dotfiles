@@ -1,5 +1,6 @@
 # Edit this configuration file to define what should be installed on
 # your system.  Help is available in the configuration.nix(5) man page
+
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
 { config, pkgs, ... }:
@@ -15,6 +16,9 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "nixos"; # Define your hostname.
+
+  # Use the fish shell
+  programs.fish.enable = true;
 
   # Enable networking
   networking.networkmanager.enable = true;
@@ -79,10 +83,12 @@
     description = "Work";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
+      shell = fish
       kate
       firefox
       vivaldi
       vivaldi-ffmpeg-codecs
+      nerdfonts
     #  thunderbird
     ];
   };
@@ -109,9 +115,9 @@
 	xwaylandvideobridge
 ##############################################
   	neovim
-	fish
 	git
   	texliveFull
+	wl-clipboard
   ];
 
 # XDG Portals
