@@ -118,6 +118,7 @@
 	git
   	texliveFull
 	wl-clipboard
+	brightnessctl
   ];
 
 # XDG Portals
