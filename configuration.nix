@@ -103,6 +103,7 @@
 ## List of necessary and useful utilities for hyprland"
   	kitty
 	waybar
+	hyprpaper
 	mako
 	rofi-wayland
 	xdg-utils
@@ -111,7 +112,6 @@
 	xdg-desktop-portal-hyprland
 	qt6.qtwayland
 	libsForQt5.qt5.qtwayland
-	egl-wayland
 	xwaylandvideobridge
 ##############################################
   	neovim
