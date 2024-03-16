@@ -112,6 +112,7 @@ services.blueman.enable = true;
 	gtk4
 	gtk3
 	gtk2
+	gnome.adwaita-icon-theme
 	gradience
 	gnome.nautilus
 	gnome-solanum
