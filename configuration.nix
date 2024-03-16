@@ -82,12 +82,8 @@ services.blueman.enable = true;
     description = "Work";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-      kate
       firefox
-      vivaldi
-      vivaldi-ffmpeg-codecs
       nerdfonts
-    #  thunderbird
     ];
   };
 
@@ -112,6 +108,15 @@ services.blueman.enable = true;
 	qt6.qtwayland
 	libsForQt5.qt5.qtwayland
 	xwaylandvideobridge
+##############################################
+	gtk4
+	gtk3
+	gtk2
+	gradience
+	gnome.nautilus
+	gnome-solanum
+	blanket
+	amberol
 ##############################################
   	neovim
 	git
