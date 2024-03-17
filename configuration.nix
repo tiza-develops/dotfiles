@@ -113,6 +113,7 @@ fonts.packages = with pkgs; [
 	mako
 	rofi-wayland
 	sddm-chili-theme
+	starship
 ###############################################
 	xdg-utils
 	xdg-desktop-portal
