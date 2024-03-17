@@ -129,6 +129,7 @@ fonts.packages = with pkgs; [
 	gradience
 	gnome.nautilus
 	gnome-solanum
+	gnome.gnome-font-viewer
 	blanket
 	amberol
 ##############################################
