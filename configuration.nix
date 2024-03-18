@@ -128,9 +128,8 @@ fonts.packages = with pkgs; [
 	gtk2
 	gnome.adwaita-icon-theme
 	gradience
-	gnome.nautilus
+	ranger
 	gnome-solanum
-	gnome.gnome-font-viewer
 	blanket
 	amberol
 ##############################################
