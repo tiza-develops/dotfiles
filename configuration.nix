@@ -123,15 +123,10 @@ fonts.packages = with pkgs; [
 	libsForQt5.qt5.qtwayland
 	xwaylandvideobridge
 ##############################################
-	gtk4
-	gtk3
-	gtk2
-	gnome.adwaita-icon-theme
 	gradience
 	ranger
-	gnome-solanum
-	blanket
-	amberol
+	tomato-c
+	dooit
 ##############################################
   	neovim
 	git
