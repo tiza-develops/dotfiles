@@ -103,8 +103,6 @@ fonts.packages = with pkgs; [
   nerdfonts
 ];
 
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
   environment.systemPackages = with pkgs; [
 ## List of necessary and useful utilities for hyprland"
   	kitty
@@ -114,18 +112,10 @@ fonts.packages = with pkgs; [
 	rofi-wayland
 	sddm-chili-theme
 	starship
-###############################################
-	xdg-utils
-	xdg-desktop-portal
-	xdg-desktop-portal-gtk
 	xdg-desktop-portal-hyprland
-	qt6.qtwayland
-	libsForQt5.qt5.qtwayland
-	xwaylandvideobridge
 ##############################################
-	gradience
 	ranger
-	super-productivity
+	tomato-c
 ##############################################
   	neovim
 	git
