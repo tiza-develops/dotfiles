@@ -125,8 +125,7 @@ fonts.packages = with pkgs; [
 ##############################################
 	gradience
 	ranger
-	tomato-c
-	dooit
+	super-productivity
 ##############################################
   	neovim
 	git
