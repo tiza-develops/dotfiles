@@ -42,10 +42,6 @@
   # Enable the Hyprland Tiling Window Manager.
   services.xserver.displayManager.sddm.enable = true;
   services.xserver.displayManager.sddm.theme = "rose-pine";
-  environment.systemPackages = with pkgs; [
-    # Install the derivation
-    (callPackage ./sddm-rose-pine.nix {})
-  ];
 
   # Configure keymap in X11
   services.xserver = {
@@ -106,6 +102,7 @@ services.flatpak.enable = true;
 
   environment.systemPackages = with pkgs; [
 ## List of necessary and useful utilities for hyprland"
+        (callPackage ./sddm-rose-pine.nix {})
   	kitty
 	waybar
 	hyprpaper
