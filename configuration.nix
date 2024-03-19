@@ -116,13 +116,9 @@ services.flatpak.enable = true;
 	starship
 	xdg-desktop-portal-hyprland
 ##############################################
-	ranger
-	tomato-c
-##############################################
   	neovim
 	git
   	texliveFull
-	latexrun
 	zathura
 	wl-clipboard
 	brightnessctl
