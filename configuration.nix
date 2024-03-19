@@ -116,6 +116,7 @@ services.flatpak.enable = true;
   	neovim
 	git
   	texliveFull
+	latexrun
 	zathura
 	wl-clipboard
 	brightnessctl
