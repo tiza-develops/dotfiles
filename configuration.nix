@@ -107,6 +107,7 @@ services.flatpak.enable = true;
 	waybar
 	hyprpaper
 	mako
+	ranger
 	rofi-wayland
 	sddm-chili-theme
 	starship
