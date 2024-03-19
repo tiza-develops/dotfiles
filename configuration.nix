@@ -103,6 +103,8 @@ fonts.packages = with pkgs; [
   nerdfonts
 ];
 
+services.flatpak.enable = true;
+
   environment.systemPackages = with pkgs; [
 ## List of necessary and useful utilities for hyprland"
   	kitty
