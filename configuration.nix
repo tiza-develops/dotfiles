@@ -1,8 +1,3 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-
-# and in the NixOS manual (accessible by running ‘nixos-help’).
-
 { config, pkgs, ... }:
 
 {
@@ -46,7 +41,11 @@
 
   # Enable the Hyprland Tiling Window Manager.
   services.xserver.displayManager.sddm.enable = true;
-  services.xserver.displayManager.sddm.theme = "chili";
+  services.xserver.displayManager.sddm.theme = "rose-pine";
+  environment.systemPackages = with pkgs; [
+    # Install the derivation
+    (callPackage ./sddm-rose-pine.nix {})
+  ];
 
   # Configure keymap in X11
   services.xserver = {
