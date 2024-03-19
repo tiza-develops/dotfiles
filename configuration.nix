@@ -120,6 +120,7 @@ fonts.packages = with pkgs; [
   	neovim
 	git
   	texliveFull
+	latexrun
 	zathura
 	wl-clipboard
 	brightnessctl
