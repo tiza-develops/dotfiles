@@ -96,6 +96,7 @@
   	neovim
 	fish
 	git
+	 (callPackage ./sddm-rose-pine.nix {})
   ];
 
   # This value determines the NixOS release from which the default
