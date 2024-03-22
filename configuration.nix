@@ -43,7 +43,7 @@
   # Enable the Hyprland Tiling Window Manager.
   services.xserver.displayManager.sddm.enable = true;
   services.xserver.displayManager.sddm.theme = "rose-pine";
-  services.xserver.desktopManager.plasma5.enable = true;
+  services.desktopManager.plasma6.enable = true;
 
   # Configure keymap in X11
   services.xserver = {
