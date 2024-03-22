@@ -12,6 +12,9 @@
 
   networking.hostName = "nixos"; # Define your hostname.
 
+  # Use the fish shell
+  programs.fish.enable = true;
+
   # Enable networking
   networking.networkmanager.enable = true;
 
