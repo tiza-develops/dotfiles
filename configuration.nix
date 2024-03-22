@@ -6,15 +6,6 @@
       ./hardware-configuration.nix
     ];
 
-  # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-
-  networking.hostName = "nixos"; # Define your hostname.
-
-  # Use the fish shell
-  programs.fish.enable = true;
-
   # Enable networking
   networking.networkmanager.enable = true;
 
@@ -49,8 +40,6 @@
     xkbVariant = "";
   };
 
-  # Configure console keymap
-  console.keyMap = "la-latin1";
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
